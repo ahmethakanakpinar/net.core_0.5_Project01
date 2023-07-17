@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
 
         public void TUpdate(Feature t)
         {
-            return _featureDal.Update(t);
+            _featureDal.Update(t);
         }
     }
 }
