@@ -1,4 +1,24 @@
-﻿
+﻿@using EntityLayer.Concrete;
+@model List<Service>
 @*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
+<div class="section px-3 px-lg-4 pt-5" id="services">
+    <div class="container-narrow">
+        <div class="text-center mb-5">
+            <h2 class="marker marker-center">Hizmetlerim</h2>
+        </div>
+        <div class="text-center">
+            <p class="mx-auto mb-3" style="max-width:600px">Web sitesi veya Mobil uygulama gibi hizmetler sunuyorum.</p>
+        </div>
+        <div class="row py-3">
+            @foreach(var item in Model)
+            {
+                <div class="col-md-3 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <img class="mb-2" src="@item.ImageUrl" width="96" height="96" alt="web design" />
+                    <div class="h5">@item.Title</div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
