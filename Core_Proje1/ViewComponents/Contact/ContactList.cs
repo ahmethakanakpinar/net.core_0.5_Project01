@@ -13,6 +13,5 @@ namespace Core_Proje1.ViewComponents.Contact
             var values = contactManager.TGetList();
             return View(values);
         }
-        
     }
 }
