@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class SkillManager : ISkillService
+    public class SkillManager : IGenericService<Skill>
     {
         ISkillDal _skillDal;
 

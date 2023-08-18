@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public class ServiceManager : IServiceService
+    public class ServiceManager : IGenericService<Service>
     {
         IServiceDal _serviceDal;
 

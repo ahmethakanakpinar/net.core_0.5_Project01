@@ -19,6 +19,8 @@
                     }
                     else
                     {
+                        @foreach (var item in Model)
+                        {
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -29,19 +31,17 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model)
-                                {
-                                    <tr>
-                                        <td> @item.FeatureID </td>
-                                        <td> @item.Header </td>
-                                        <td> @item.Name </td>
-                                        <td> @item.Title </td>
-                                    </tr>
-                                }
+                                <tr>
+                                    <td> @item.FeatureID </td>
+                                    <td> @item.Header </td>
+                                    <td> @item.Name </td>
+                                    <td> @item.Title </td>
+                                </tr>
                             </tbody>
                         </table>
-                        <br>
-                        <button type="button" class="btn btn-inverse-secondary btn-fw">Güncelle</button>
+                        <br />
+                        <a href="/Feature/UpdateFeature/@item.FeatureID" class="btn btn-inverse-secondary btn-fw">Güncelle</a>
+                        }
                     }
                 </div>
             </div>
