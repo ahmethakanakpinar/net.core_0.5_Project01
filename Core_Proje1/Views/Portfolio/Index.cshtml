@@ -1,0 +1,67 @@
+﻿@using EntityLayer.Concrete
+@model List<Portfolio>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Projelerim</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Platform </th>
+                            <th> Proje Adı </th>
+                            <th> Son Güncelleme </th>
+                            <th> Güncelle </th>
+                            <th> Başlangıç Tarihi </th>
+                            <th> Durum </th>
+                            <th> İşlem </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model)
+                        {
+                            <tr>
+                                <td class="py-1">
+                                    <img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/faces-clipart/pic-1.png" alt="image" />
+                                </td>
+                                <td> @item.Name </td>
+                                <td> 15 Dakika Önce </td>
+                                <td>
+                                   
+                                    <a href="#" class="btn btn-warning btn-icon-text">
+                                        <i class="mdi mdi-reload btn-icon-prepend"></i> Güncelle
+                                    </a>
+                                </td>
+                                <td>@item.Date</td>
+                                <td>@item.Status</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-danger btn-icon-text">
+                                        Sil <i class="mdi mdi-delete btn-icon-prepend"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-outline-secondary btn-icon-text">
+                                        Düzenle <i class="mdi mdi-file-check btn-icon-append"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="Portfolio/AddPortfolio" class="btn btn-primary btn-icon-text">
+                    <i class="mdi mdi-shape-square-plus btn-icon-prepend"></i> Ekle
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+                
+          
+          
+                     
+                   
+
