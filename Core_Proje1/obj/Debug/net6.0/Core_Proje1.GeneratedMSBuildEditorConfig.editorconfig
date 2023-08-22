@@ -52,8 +52,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ahmet/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Views/Portfolio/AddPortfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEFkZFBvcnRmb2xpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ahmet/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Views/Portfolio/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ahmet/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Views/Portfolio/UpdatePortfolio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9ydGZvbGlvXFVwZGF0ZVBvcnRmb2xpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Ahmet/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Views/Shared/Components/AboutList/Default.cshtml]
