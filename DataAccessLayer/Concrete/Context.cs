@@ -12,7 +12,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=AHMETHAKAN\\SQLEXPRESS;database=CoreProje1DB;integrated security=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer("server=PC309\\SQLEXPRESS;database=CoreProje1DB;integrated security=true;TrustServerCertificate=True;");
         }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Contact> Contacts { get; set; }

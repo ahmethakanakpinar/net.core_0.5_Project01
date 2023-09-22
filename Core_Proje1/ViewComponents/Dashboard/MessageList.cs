@@ -1,12 +1,13 @@
-﻿using BusinessLayer.Concrete;
+﻿using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Core_Proje1.ViewComponents.Message
+namespace Core_Proje1.ViewComponents.Dashboard
 {
     public class MessageList : ViewComponent
     {
-       public IViewComponentResult Invoke()
+        Context c = new Context();
+        public IViewComponentResult Invoke()
         {
             return View();
         }

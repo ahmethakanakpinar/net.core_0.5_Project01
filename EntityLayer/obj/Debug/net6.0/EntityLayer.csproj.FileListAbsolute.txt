@@ -12,3 +12,17 @@ C:\Users\Ahmet\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer
 C:\Users\Ahmet\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\Ahmet\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
 C:\Users\Ahmet\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\bin\Debug\net6.0\EntityLayer.runtimeconfig.json
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
