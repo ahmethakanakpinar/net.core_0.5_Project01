@@ -18,6 +18,11 @@ namespace BusinessLayer.Concrete
             _userMessageDal = userMessageDal;
         }
 
+        public List<UserMessage> GetUserMessageWithUserService()
+        {
+            return _userMessageDal.GetUserMessagesWithUser();
+        }
+
         public void TAdd(UserMessage t)
         {
             _userMessageDal.Insert(t);
