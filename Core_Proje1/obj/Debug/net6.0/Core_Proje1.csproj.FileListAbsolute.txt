@@ -544,3 +544,8 @@ C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Pr
 C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\obj\Debug\net6.0\Core_Proje1.pdb
 C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\obj\Debug\net6.0\Core_Proje1.genruntimeconfig.cache
 C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\obj\Debug\net6.0\ref\Core_Proje1.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
