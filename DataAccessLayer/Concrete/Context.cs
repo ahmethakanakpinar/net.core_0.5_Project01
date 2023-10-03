@@ -27,5 +27,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserMessage> UserMessages { get; set; }
+        public DbSet<Announcement> Announcements { get; set; }
     }
 }
