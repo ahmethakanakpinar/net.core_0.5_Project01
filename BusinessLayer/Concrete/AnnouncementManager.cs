@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    internal class AnnouncementManager : IAnnouncementService
+    public class AnnouncementManager : IAnnouncementService
     {
         IAnnouncementDal _announcementDal;
 
