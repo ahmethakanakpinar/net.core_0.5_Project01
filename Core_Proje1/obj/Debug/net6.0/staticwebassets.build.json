@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nrqQe/opz7bbzbZljGFEjvGxM6K6wu5tSZI4c8PTziE=",
+  "Hash": "fbFkkyEfHWqWQaYuhio5E3E0QDD9ztknMArq/pIG/uo=",
   "Source": "Core_Proje1",
   "BasePath": "_content/Core_Proje1",
   "Mode": "Default",
@@ -48584,6 +48584,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Template\\scripts\\purecounter.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg",
+      "SourceId": "Core_Proje1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\",
+      "BasePath": "_content/Core_Proje1",
+      "RelativePath": "userimage/fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userimage\\fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg"
     }
   ]
 }
