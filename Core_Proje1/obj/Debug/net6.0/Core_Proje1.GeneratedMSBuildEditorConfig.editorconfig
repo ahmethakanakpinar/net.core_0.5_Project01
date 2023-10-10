@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Hakan\OneDrive - Tora\Documents\Visual Studio 2022\asp-net-core\Core_Proje1\Core_Proje1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Hakan/OneDrive - Tora/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Areas/Writer/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcV3JpdGVyXFZpZXdzXERhc2hib2FyZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Hakan/OneDrive - Tora/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Areas/Writer/Views/Default/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcV3JpdGVyXFZpZXdzXERlZmF1bHRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,10 +46,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Hakan/OneDrive - Tora/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Areas/Writer/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcV3JpdGVyXFZpZXdzXExvZ2luXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Hakan/OneDrive - Tora/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Areas/Writer/Views/Profile/FormScriptPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcV3JpdGVyXFZpZXdzXFByb2ZpbGVcRm9ybVNjcmlwdFBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Hakan/OneDrive - Tora/Documents/Visual Studio 2022/asp-net-core/Core_Proje1/Core_Proje1/Areas/Writer/Views/Profile/Index.cshtml]
