@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fbFkkyEfHWqWQaYuhio5E3E0QDD9ztknMArq/pIG/uo=",
+  "Hash": "6GRLlcQNHgQ4aDyDRgqNFp63XWUYyAlyiit8KRhYt8E=",
   "Source": "Core_Proje1",
   "BasePath": "_content/Core_Proje1",
   "Mode": "Default",
@@ -48586,12 +48586,12 @@
       "OriginalItemSpec": "wwwroot\\Template\\scripts\\purecounter.min.js"
     },
     {
-      "Identity": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg",
+      "Identity": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\ad909bbe-3459-4b0b-a89c-72ac2510dec2.jpg",
       "SourceId": "Core_Proje1",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\",
       "BasePath": "_content/Core_Proje1",
-      "RelativePath": "userimage/fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg",
+      "RelativePath": "userimage/ad909bbe-3459-4b0b-a89c-72ac2510dec2.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48600,7 +48600,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\userimage\\fefbb84e-3f87-48c3-bccb-6d9b81fa7297.jpg"
+      "OriginalItemSpec": "wwwroot\\userimage\\ad909bbe-3459-4b0b-a89c-72ac2510dec2.jpg"
     }
   ]
 }
