@@ -11,7 +11,7 @@ namespace Core_Proje1.Areas.Writer.ViewComponents.Notification
         AnnouncementManager _AnnouncementManager = new AnnouncementManager(new EfAnnouncementDal());
         public IViewComponentResult Invoke()
         {
-            var values = _AnnouncementManager.TGetList();
+            var values = _AnnouncementManager.TGetList().Take(5).ToList();
             return View(values);
         }
     }

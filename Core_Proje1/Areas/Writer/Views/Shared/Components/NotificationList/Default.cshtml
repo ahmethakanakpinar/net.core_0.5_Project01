@@ -10,7 +10,7 @@
     <p class="mb-0 font-weight-normal float-left dropdown-header">Bildirimler</p>
     @foreach(var item in Model)
     {
-    <a class="dropdown-item preview-item">
+    <a class="dropdown-item preview-item" data-toggle="modal" data-target="#exampleModalCenterbil_@item.ID">
         <div class="preview-thumbnail">
             <div class="preview-icon bg-success">
                 <i class="ti-info-alt mx-0"></i>
@@ -19,9 +19,12 @@
         <div class="preview-item-content">
             <h6 class="preview-subject font-weight-normal">@item.Title</h6>
             <p class="font-weight-light small-text mb-0 text-muted">
-                @item.Content.Substring(0,Math.Min(50, item.Content.Length))...
+                @item.Content
             </p>
         </div>
     </a>
     }
+    <div class="dropdown-item preview-item">
+        <a href="/writer/default/index" class="btn btn-outline-primary">Tümüne Git</a>
+    </div>
 </div>
