@@ -1,0 +1,56 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterMessage>
+
+@{
+    ViewData["Title"] = "SenderMessage";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Giden Mesaj</h4>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Konu</th>
+                            <th>Gönderen</th>
+                            <th>Detaylar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.WriterMessageID</td>
+                                <td>@item.Subject</td>
+                                <td>@item.ReceiverName</td>
+                                <td>@(((DateTime)item.Date).ToString("dd MMM yyyy"))</td>
+                                <td><a href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#messagereceiver_@item.WriterMessageID">Mesajı Oku</a></td>
+                            </tr>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="messagereceiver_@item.WriterMessageID" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Giden Mesaj</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <span>@item.MessageContent</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
