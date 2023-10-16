@@ -31,5 +31,21 @@ namespace Core_Proje1.Areas.Writer.Controllers
             var messagelist = _writerMessageManager.GetListSenderMessage(p);
             return View(messagelist);
         }
+        [HttpGet]
+        public async Task<IActionResult> SendMessage()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> SendMessage(WriterMessage p)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);
+            p.Sender = user.Email;
+            p.SenderName = user.Name + " " + user.Surname;
+            p.ReceiverName = "";
+            p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            _writerMessageManager.TAdd(p);
+            return RedirectToAction("SenderMessage", "Message");
+        }
     }
 }
