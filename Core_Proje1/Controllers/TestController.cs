@@ -8,5 +8,5 @@ namespace Core_Proje1.Controllers
         {
             return View();
         }
-    }
+    }  
 }

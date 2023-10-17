@@ -13,18 +13,28 @@ namespace Core_Proje1.Controllers
             return View();
         }
         [HttpGet]
-        public PartialViewResult SendMessage()
+        public IActionResult SendMessage()
         {
-            return PartialView();
+            return View();
         }
-        [HttpPost] 
-        public PartialViewResult SendMessage(Message p)
+        //[HttpPost]
+        //public PartialViewResult SendMessage(Message p)
+        //{
+
+        //    p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+        //    p.Status = true;
+        //    messageManager.TAdd(p);
+        //    return PartialView();
+        //}
+        [HttpPost]
+        public IActionResult SendMessage(Message p)
         {
-           
             p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             p.Status = true;
             messageManager.TAdd(p);
-            return PartialView();
+
+            // Başarılı bir işlem sonrasında başka bir sayfaya yönlendirme yapabilirsiniz
+            return RedirectToAction("Index");
         }
     }
 }
