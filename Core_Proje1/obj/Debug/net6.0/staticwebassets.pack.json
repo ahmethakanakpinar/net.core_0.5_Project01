@@ -11449,6 +11449,10 @@
       "PackagePath": "staticwebassets\\userimage\\c424eb1a-4d4e-4e43-9f4e-1f1e010d94f1.jpeg"
     },
     {
+      "Id": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg",
+      "PackagePath": "staticwebassets\\userimage\\dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Core_Proje1.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

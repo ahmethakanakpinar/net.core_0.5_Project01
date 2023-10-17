@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mnffQ/X0oo9hykS5NlOLDQ20EB6H0xqK85oGWKevge0=",
+  "Hash": "h4ckV2amcgd8352n4Ope5lgsxUHHgi7GjLmBFjHb3/4=",
   "Source": "Core_Proje1",
   "BasePath": "_content/Core_Proje1",
   "Mode": "Default",
@@ -48686,6 +48686,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\userimage\\c424eb1a-4d4e-4e43-9f4e-1f1e010d94f1.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg",
+      "SourceId": "Core_Proje1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\",
+      "BasePath": "_content/Core_Proje1",
+      "RelativePath": "userimage/dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userimage\\dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg"
     }
   ]
 }

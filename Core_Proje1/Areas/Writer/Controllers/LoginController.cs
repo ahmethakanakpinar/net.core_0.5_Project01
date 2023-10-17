@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Core_Proje1.Areas.Writer.Controllers
 {
     [Area("Writer")]
-    [Route("Writer/[controller]/[action]")]
+    [Route("Writer/[controller]/[action]/{id?}")]
     public class LoginController : Controller
     {
         private readonly SignInManager<WriterUser> _signInManager;
@@ -31,7 +31,7 @@ namespace Core_Proje1.Areas.Writer.Controllers
                 if (result.Succeeded) 
                 {
                     //return Redirect("/Writer/Default/Index");
-                    return RedirectToAction("Index", "Default");
+                    return RedirectToAction("Index", "Dashboard");
                 }
                 else
                 {
@@ -39,6 +39,12 @@ namespace Core_Proje1.Areas.Writer.Controllers
                 }
             }
             return View();
+        }
+        [HttpGet]
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
