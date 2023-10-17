@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Core_Proje1.Areas.Writer.Controllers
 {
     [Area("Writer")]
+    [Route("Writer/[controller]/[action]")]
     public class LoginController : Controller
     {
         private readonly SignInManager<WriterUser> _signInManager;
@@ -29,7 +30,8 @@ namespace Core_Proje1.Areas.Writer.Controllers
                 
                 if (result.Succeeded) 
                 {
-                    return Redirect("/Writer/Default/Index");
+                    //return Redirect("/Writer/Default/Index");
+                    return RedirectToAction("Index", "Default");
                 }
                 else
                 {

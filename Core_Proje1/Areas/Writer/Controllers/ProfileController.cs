@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Core_Proje1.Areas.Writer.Controllers
 {
     [Area("Writer")]
+    [Route("Writer/[controller]/[action]")]
     public class ProfileController : Controller
     {
         private readonly UserManager<WriterUser> _userManager;
@@ -41,12 +42,15 @@ namespace Core_Proje1.Areas.Writer.Controllers
             }
             user.Name = p.Name;
             user.Surname = p.Surname;
-
-            var changepassword = await _userManager.ChangePasswordAsync(user, p.OldPassword, p.Password);
-            var result = await _userManager.UpdateAsync(user);
-            if (result.Succeeded && changepassword.Succeeded)
+            if(p.OldPassword != null)
             {
-                return Redirect("/Writer/Profile/Index");
+                await _userManager.ChangePasswordAsync(user, p.OldPassword, p.Password);
+            }
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+            {
+                //return Redirect("/Writer/Profile/Index");
+                return RedirectToAction("Index", "Profile");
             }
             else
             {

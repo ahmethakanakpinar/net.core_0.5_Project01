@@ -8,6 +8,7 @@ using System.Xml.Linq;
 namespace Core_Proje1.Areas.Writer.Controllers
 {
     [Area("Writer")]
+    [Route("Writer/[controller]/[action]")]
     public class DashboardController : Controller
     {
         private readonly UserManager<WriterUser> _userManager;
