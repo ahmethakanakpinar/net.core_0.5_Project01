@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
@@ -42,7 +43,9 @@ namespace Core_Proje1.Areas.Writer.Controllers
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
             p.Sender = user.Email;
             p.SenderName = user.Name + " " + user.Surname;
-            p.ReceiverName = "";
+            Context c = new Context();
+            var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " "+ y.Surname).FirstOrDefault();
+            p.ReceiverName = usernamesurname;
             p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             _writerMessageManager.TAdd(p);
             return RedirectToAction("SenderMessage", "Message");
