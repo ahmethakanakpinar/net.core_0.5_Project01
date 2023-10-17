@@ -23,7 +23,7 @@
             <div class="preview-item-content">
                 <h6 class="preview-subject font-weight-normal">@item.Title</h6>
                 <p class="font-weight-light small-text mb-0 text-muted">
-                    @item.Content
+                        @item.Content.Substring(0, Math.Min(item.Content.Length, 50))...
                 </p>
             </div>
         </a>
