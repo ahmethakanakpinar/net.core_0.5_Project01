@@ -13,20 +13,24 @@
             </p>
             <form class="forms-sample" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="exampleInputName1">İsim</label>
-                    <input type="text" asp-for="Name"  class="form-control" id="exampleInputName1" placeholder="Name">
+                    <label for="exampleInputName">İsim</label>
+                    <input type="text" asp-for="Name"  class="form-control" id="exampleInputName" placeholder="İsim">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputName1">Soyisim</label>
-                    <input type="text" asp-for="Surname" class="form-control" id="exampleInputName1" placeholder="Name">
+                    <label for="exampleInputSurname">Soyisim</label>
+                    <input type="text" asp-for="Surname" class="form-control" id="exampleInputSurname" placeholder="Soyisim">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword4">Şifre</label>
-                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                    <label for="exampleInputOldPassword">Eski Şifre</label>
+                    <input type="password" asp-for="OldPassword" class="form-control" id="exampleInputOldPassword" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword4">Şifre Tekrar</label>
-                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                    <label for="exampleInputPassword">Şifre</label>
+                    <input type="password" asp-for="Password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputRepeatPassword">Şifre Tekrar</label>
+                    <input type="password" asp-for="PasswordConfirm" class="form-control" id="exampleInputRepeatPassword" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label>Resim Seç</label>

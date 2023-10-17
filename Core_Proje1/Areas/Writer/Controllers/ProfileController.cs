@@ -41,10 +41,19 @@ namespace Core_Proje1.Areas.Writer.Controllers
             }
             user.Name = p.Name;
             user.Surname = p.Surname;
+
+            var changepassword = await _userManager.ChangePasswordAsync(user, p.OldPassword, p.Password);
             var result = await _userManager.UpdateAsync(user);
-            if (result.Succeeded)
+            if (result.Succeeded && changepassword.Succeeded)
             {
                 return Redirect("/Writer/Profile/Index");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
             }
             return View();
         }
