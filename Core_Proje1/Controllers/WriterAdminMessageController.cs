@@ -1,12 +1,21 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Core_Proje1.Controllers
 {
     public class WriterAdminMessageController : Controller
     {
+        WriterMessageManager _writerMessageManager = new WriterMessageManager(new EfWriterMessage());
+
         public IActionResult ReceiverMessageList()
         {
-            return View();
+            var adminemail = "admin@gmail.com";
+            var values = _writerMessageManager.GetListReceiverMessage(adminemail);
+            return View(values);
         }
         public IActionResult SenderMessageList()
         {
