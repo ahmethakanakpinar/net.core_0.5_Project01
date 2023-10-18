@@ -41,7 +41,7 @@ namespace Core_Proje1.Controllers
             var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " " + y.Surname).FirstOrDefault();
             p.ReceiverName = usernamesurname;
             _writerMessageManager.TAdd(p);
-            return View();
+            return RedirectToAction("SenderMessageList", "WriterAdminMessage");
         }
     }
 }
