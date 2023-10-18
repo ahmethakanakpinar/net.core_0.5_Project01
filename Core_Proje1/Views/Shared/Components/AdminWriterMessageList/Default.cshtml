@@ -1,0 +1,55 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterMessage>
+@{
+    string CalculateTimeAgo(DateTime messageDate)
+    {
+        TimeSpan timeDifference = DateTime.Now - messageDate;
+
+        if (timeDifference.TotalMinutes < 1)
+        {
+            return "Şimdi";
+        }
+        else if (timeDifference.TotalMinutes < 60)
+        {
+            int minutesAgo = (int)timeDifference.TotalMinutes;
+            return $"{minutesAgo} Dakika Önce";
+        }
+        else if (timeDifference.TotalHours < 24)
+        {
+            int hoursAgo = (int)timeDifference.TotalHours;
+            return $"{hoursAgo} Saat Önce";
+        }
+        else
+        {
+            int daysAgo = (int)timeDifference.TotalDays;
+            return $"{daysAgo} Gün Önce";
+        }
+    }
+}
+
+<li class="nav-item dropdown border-left">
+    <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+        <i class="mdi mdi-email"></i>
+        <span class="count bg-success"></span>
+    </a>
+    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+        <h6 class="p-3 mb-0">Mesajlar</h6>
+        <div class="dropdown-divider"></div>
+        @foreach (var item in Model)
+        {
+            string timeAgo = CalculateTimeAgo(item.Date);
+
+        <a class="dropdown-item preview-item">
+            <div class="preview-thumbnail">
+                <img src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/images/faces/face4.jpg" alt="image" class="rounded-circle profile-pic">
+            </div>
+            <div class="preview-item-content">
+                <p class="preview-subject ellipsis mb-1">@item.SenderName Sana Mesaj Gönderdi</p>
+                    <p class="text-muted mb-0">@timeAgo</p>
+            </div>
+        </a>
+        }
+        <div class="dropdown-divider"></div>
+        <p class="p-3 mb-0 text-center"><a href="/WriterAdminMessage/ReceiverMessageList">Tümüne Git</a></p>
+    </div>
+</li>

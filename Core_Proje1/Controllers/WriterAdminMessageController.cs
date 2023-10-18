@@ -15,13 +15,13 @@ namespace Core_Proje1.Controllers
         public IActionResult ReceiverMessageList()
         {
             var adminemail = "admin@gmail.com";
-            var values = _writerMessageManager.GetListReceiverMessage(adminemail);
+            var values = _writerMessageManager.GetListReceiverMessage(adminemail).OrderByDescending(x => x.WriterMessageID).ToList();
             return View(values);
         }
         public IActionResult SenderMessageList()
         {
             var adminemail = "admin@gmail.com";
-            var values = _writerMessageManager.GetListSenderMessage(adminemail);
+            var values = _writerMessageManager.GetListSenderMessage(adminemail).OrderByDescending(x => x.WriterMessageID).ToList();
             return View(values);
 
         }
@@ -37,7 +37,7 @@ namespace Core_Proje1.Controllers
             var adminname = "Admin";
             p.Sender = adminemail;
             p.SenderName = adminname;
-            p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            p.Date = Convert.ToDateTime(DateTime.Now);
             Context c = new Context();
             var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " " + y.Surname).FirstOrDefault();
             usernamesurname = (usernamesurname != null) ? usernamesurname : "";
