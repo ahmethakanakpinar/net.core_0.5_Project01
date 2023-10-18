@@ -19,7 +19,9 @@ namespace Core_Proje1.Controllers
         }
         public IActionResult SenderMessageList()
         {
-            return View();
+            var adminemail = "admin@gmail.com";
+            var values = _writerMessageManager.GetListSenderMessage(adminemail);
+            return View(values);
         }
         [HttpGet]
         public IActionResult SendMessage()
