@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
@@ -29,8 +30,17 @@ namespace Core_Proje1.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult SendMessage(int i)
+        public IActionResult SendMessage(WriterMessage p)
         {
+            var adminemail = "admin@gmail.com";
+            var adminname = "Admin";
+            p.Sender = adminemail;
+            p.SenderName = adminname;
+            p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
+            Context c = new Context();
+            var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " " + y.Surname).FirstOrDefault();
+            p.ReceiverName = usernamesurname;
+            _writerMessageManager.TAdd(p);
             return View();
         }
     }
