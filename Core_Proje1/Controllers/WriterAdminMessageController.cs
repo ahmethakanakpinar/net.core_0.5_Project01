@@ -23,6 +23,7 @@ namespace Core_Proje1.Controllers
             var adminemail = "admin@gmail.com";
             var values = _writerMessageManager.GetListSenderMessage(adminemail);
             return View(values);
+
         }
         [HttpGet]
         public IActionResult SendMessage()
@@ -43,6 +44,15 @@ namespace Core_Proje1.Controllers
             p.ReceiverName = usernamesurname;
             _writerMessageManager.TAdd(p);
             return RedirectToAction("SenderMessageList", "WriterAdminMessage");
+
+        }
+        public IActionResult DeleteMessage(int id)
+        {
+            var values = _writerMessageManager.TGetByID(id);
+            _writerMessageManager.TDelete(values);
+            var adminemail = "admin@gmail.com";
+            var dizin = (values.Sender == adminemail) ? "SenderMessageList" : "ReceiverMessageList";
+            return RedirectToAction(dizin);
         }
     }
 }
