@@ -39,6 +39,7 @@ namespace Core_Proje1.Controllers
             p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             Context c = new Context();
             var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " " + y.Surname).FirstOrDefault();
+            usernamesurname = (usernamesurname != null) ? usernamesurname : "";
             p.ReceiverName = usernamesurname;
             _writerMessageManager.TAdd(p);
             return RedirectToAction("SenderMessageList", "WriterAdminMessage");

@@ -46,6 +46,7 @@ namespace Core_Proje1.Areas.Writer.Controllers
             p.SenderName = user.Name + " " + user.Surname;
             Context c = new Context();
             var usernamesurname = c.Users.Where(x => x.Email == p.Receiver).Select(y => y.Name + " "+ y.Surname).FirstOrDefault();
+            usernamesurname = (usernamesurname != null) ? usernamesurname : "";
             p.ReceiverName = usernamesurname;
             p.Date = Convert.ToDateTime(DateTime.Now.ToShortDateString());
             _writerMessageManager.TAdd(p);
