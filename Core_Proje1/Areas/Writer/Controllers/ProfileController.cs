@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Proje1.Areas.Writer.Controllers
 {
-    [Authorize(Roles = "Admin")]
-    [Authorize(Roles = "Writers")]
+    [Authorize(Roles = "Admin, Writer")]
     [Area("Writer")]
     [Route("Writer/[controller]/[action]/{id?}")]
     public class ProfileController : Controller
