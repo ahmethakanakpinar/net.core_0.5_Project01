@@ -7,9 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Core_Proje1.Areas.Writer.Controllers
 {
+    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "Writers")]
     [Area("Writer")]
     [Route("Writer/[controller]/[action]/{id?}")]
-    [Authorize]
     public class DefaultController : Controller
     {
         AnnouncementManager _announcementManager = new AnnouncementManager(new EfAnnouncementDal());
