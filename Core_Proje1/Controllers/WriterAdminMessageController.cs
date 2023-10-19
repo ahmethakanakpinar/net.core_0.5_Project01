@@ -2,12 +2,15 @@
 using DataAccessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Core_Proje1.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class WriterAdminMessageController : Controller
     {
         WriterMessageManager _writerMessageManager = new WriterMessageManager(new EfWriterMessage());

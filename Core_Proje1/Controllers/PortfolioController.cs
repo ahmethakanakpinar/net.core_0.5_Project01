@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Proje1.Controllers
 {
+    [Authorize(Roles = "Admin")]
+
     public class PortfolioController : Controller
     {
         PortfolioManager portfolioManager = new PortfolioManager(new EfPortfolioDal());
