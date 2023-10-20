@@ -1,7 +1,62 @@
-﻿@{
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+@using Core_Proje1.Helpers
+@{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Gelen Mesajlar</h4>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th> Resim </th>
+                            <th> Adı Soyadı </th>
+                            <th> Kullanıcı Adı</th>
+                            <th> E-mail</th>
+                            <th> Telefon Numarası </th>
+                            <th> İşlem </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="py-1">
+                                    <img src="~/userimage/@MyHelper.DefaultImage(item.ImageUrl)" alt="image" style="width:50px;height:50px;" />
+                                </td>
+                                <td>@item.Name @item.Surname</td>
+                                <td>@item.UserName</td>
+                                <td>@item.Email</td>
+                                <td>@item.PhoneNumber</td>
+                                <td>
+                                    <a href="/Contact/DeleteWriter/@item.Id" class="btn btn-outline-danger btn-icon-text">
+                                        Kullanıcıyı Sil <i class="mdi mdi-delete btn-icon-prepend"></i>
+                                    </a>
+                                    <a href="/Contact/UpdateWriter/@item.Id" class="btn btn-outline-info btn-icon-text">
+                                        Kullanıcıyı Düzenle <i class="mdi mdi-update btn-icon-prepend"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <!-- Modal -->
+                        }
+                       
+                    </tbody>
+                </table>
+                <div>
+                    <a href="/Contact/AddWriter" class="btn btn-primary btn-icon-text">
+                        Kullanıcı Ekle<i class="mdi mdi-create btn-icon-prepend"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 

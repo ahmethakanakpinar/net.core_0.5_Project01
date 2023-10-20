@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h4ckV2amcgd8352n4Ope5lgsxUHHgi7GjLmBFjHb3/4=",
+  "Hash": "EtmuBF4AVsNEMPmpSsQmrLtUIdl6UrxPlbfGvVxpxVg=",
   "Source": "Core_Proje1",
   "BasePath": "_content/Core_Proje1",
   "Mode": "Default",
@@ -48703,6 +48703,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\userimage\\dfaf7df3-cacb-48af-86f6-fe3f26b814aa.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\userimage\\pic-1.png",
+      "SourceId": "Core_Proje1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Hakan\\OneDrive - Tora\\Documents\\Visual Studio 2022\\asp-net-core\\Core_Proje1\\Core_Proje1\\wwwroot\\",
+      "BasePath": "_content/Core_Proje1",
+      "RelativePath": "userimage/pic-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\userimage\\pic-1.png"
     }
   ]
 }
