@@ -12,6 +12,12 @@ namespace Core_Proje1.Controllers
             var values = _writerManager.TGetList();
             return View(values);
         }
+        public IActionResult DeleteWriter(int id)
+        {
+            var user = _writerManager.TGetByID(id);
+            _writerManager.TDelete(user);
+            return RedirectToAction("Index");
+        }
 
     }
 }
