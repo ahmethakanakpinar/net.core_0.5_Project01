@@ -11,7 +11,7 @@ namespace Core_Proje1.Areas.Writer.Models
         [Required(ErrorMessage ="Lütfen Kullanıcı Adını Giriniz")]
         public string UserName { get; set; }
 
-        public IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
 
         [Required(ErrorMessage ="Lütfen Şifrenizi Giriniz")]
         public string Password { get; set; }
@@ -22,6 +22,7 @@ namespace Core_Proje1.Areas.Writer.Models
         public string Mail { get; set; }
         public string? ImageUrl { get; set; }
         public string? PhoneNumber { get; set; }
+    
 
 
     }

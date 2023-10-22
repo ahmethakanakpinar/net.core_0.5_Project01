@@ -91,5 +91,58 @@ namespace Core_Proje1.Controllers
             return View(p);
         }
 
+        [HttpGet]
+        public IActionResult UpdateWriter(int id)
+        {
+            var values = _writerManager.TGetByID(id);
+            UserEditViewModel model = new UserEditViewModel();
+            model.Name = values.Name;
+            model.Surname = values.Surname;
+            model.ImageUrl = values.ImageUrl;
+            model.UserName = values.UserName;
+            model.Mail = values.Email;
+            model.PhoneNumber = values.PhoneNumber;
+            model.Id = id;
+            return View(model);
+        }
+        [HttpPost]
+        public async Task<IActionResult> UpdateWriter(UserEditViewModel p)
+        {
+            var user = await _userManager.FindByIdAsync(p.Id.ToString());
+            if (p.Image != null)
+            {
+                var resource = Directory.GetCurrentDirectory();
+                var extension = Path.GetExtension(p.Image.FileName);
+                var imagename = Guid.NewGuid() + extension;
+                var savelocation = resource + "/wwwroot/userimage/" + imagename;
+                var stream = new FileStream(savelocation, FileMode.Create);
+                await p.Image.CopyToAsync(stream);
+                user.ImageUrl = imagename;
+            }
+            user.Name = p.Name;
+            user.Surname = p.Surname;
+            user.Email = p.Mail;
+            user.PhoneNumber = p.PhoneNumber;
+
+            if (p.Password != null && p.ConfirmPassword != null)
+            {
+                user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.Password);
+
+            }
+            var result = await _userManager.UpdateAsync(user);
+            if (result.Succeeded)
+            {
+                //return Redirect("/Writer/Profile/Index");
+                return RedirectToAction("Index", "Writer");
+            }
+            else
+            {
+                foreach (var item in result.Errors)
+                {
+                    ModelState.AddModelError("", item.Description);
+                }
+            }
+            return View();
+        }
     }
 }

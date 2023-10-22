@@ -1,11 +1,10 @@
-﻿@model Core_Proje1.Areas.Writer.Models.UserRegisterViewModel
+﻿@model Core_Proje1.Areas.Writer.Models.UserEditViewModel
 @{
-    ViewData["Title"] = "AddWriter";
+    ViewData["Title"] = "UpdateWriter";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-
-@using (Html.BeginForm("AddWriter", "Writer", FormMethod.Post, new { enctype = "multipart/form-data" }))
+@using (Html.BeginForm("UpdateWriter", "Writer", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
     <div class="row">
         <div class="col-12 grid-margin stretch-card">
@@ -36,7 +35,7 @@
                         <div class="form-group">
                             <label>Kullanıcı Adı</label>
                             <span class="text-danger" asp-validation-for="UserName"></span>
-                            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control"})
+                            @Html.TextBoxFor(x => x.UserName, new { @class = "form-control text-dark", @disabled = "disabled"  })
                         </div>
                         <div class="form-group">
                             <label>E-mail Adresi</label>
@@ -79,3 +78,5 @@
     <script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/typeahead.js"></script>
     <script src="~/corona-free-dark-bootstrap-admin-template-1.0.0/template/assets/js/select2.js"></script>
 }
+
+

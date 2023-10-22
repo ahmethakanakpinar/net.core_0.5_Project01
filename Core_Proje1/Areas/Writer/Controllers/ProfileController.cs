@@ -25,21 +25,21 @@ namespace Core_Proje1.Areas.Writer.Controllers
             UserEditViewModel model = new UserEditViewModel();
             model.Name = values.Name;
             model.Surname = values.Surname;
-            model.PictureUrl = values.ImageUrl;
+            model.ImageUrl = values.ImageUrl;
             return View(model);
         }
         [HttpPost]
         public async Task<IActionResult> Index(UserEditViewModel p)
         {
             var user = await _userManager.FindByNameAsync(User.Identity.Name);
-            if (p.Picture != null) 
+            if (p.Image != null) 
             {
                 var resource = Directory.GetCurrentDirectory();
-                var extension = Path.GetExtension(p.Picture.FileName);
+                var extension = Path.GetExtension(p.Image.FileName);
                 var imagename = Guid.NewGuid() + extension;
                 var savelocation = resource + "/wwwroot/userimage/" + imagename;
                 var stream = new FileStream(savelocation, FileMode.Create);
-                await p.Picture.CopyToAsync(stream);
+                await p.Image.CopyToAsync(stream);
                 user.ImageUrl = imagename;
             }
             user.Name = p.Name;
