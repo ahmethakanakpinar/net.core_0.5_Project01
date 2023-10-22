@@ -10,8 +10,9 @@ namespace Core_Proje1.Areas.Writer.Models
         public string Surname { get; set; }
         [Required(ErrorMessage ="Lütfen Kullanıcı Adını Giriniz")]
         public string UserName { get; set; }
-        [Required(ErrorMessage = "Lütfen Resim Url Giriniz")]
-        public string ImageURL { get; set; }
+
+        public IFormFile Image { get; set; }
+
         [Required(ErrorMessage ="Lütfen Şifrenizi Giriniz")]
         public string Password { get; set; }
         [Required(ErrorMessage ="Lütfen Şifrenizi tekrar Giriniz")]
@@ -19,5 +20,9 @@ namespace Core_Proje1.Areas.Writer.Models
         public string ConfirmPassword { get; set; }
         [Required(ErrorMessage ="Lütfen Mail Adresinizi Giriniz")]
         public string Mail { get; set; }
+        public string? ImageUrl { get; set; }
+        public string? PhoneNumber { get; set; }
+
+
     }
 }

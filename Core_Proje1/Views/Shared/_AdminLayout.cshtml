@@ -30,5 +30,6 @@
         <!-- page-body-wrapper ends -->
     </div>
     @await Html.PartialAsync("/Views/Dashboard/_AdminScriptsPartial.cshtml")
+    @RenderSection("ExtraScripts", required: false)
 </body>
 </html>
